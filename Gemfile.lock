@@ -87,6 +87,7 @@ GEM
       gemoji (~> 2.0)
       html-pipeline (~> 1.9)
       jekyll (~> 2.0)
+    json (2.0.2)
     kramdown (1.5.0)
     liquid (2.6.2)
     listen (3.0.8)
@@ -101,7 +102,7 @@ GEM
     net-dns (0.8.0)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-    octokit (4.3.0)
+    octokit (4.4.0)
       sawyer (~> 0.7.0, >= 0.5.3)
     parslet (1.5.0)
       blankslate (~> 2.0)
@@ -138,6 +139,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
+  json
   minima (~> 2.0)
 
 RUBY VERSION
