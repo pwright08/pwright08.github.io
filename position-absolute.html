@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(230, 248, 250)
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.img-container {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    background-color: red;
+    border-style: solid;
+    float: left;
+    margin: 50px 10px 0px 10px;
+}
+
+/* Set max width, height will be maintained at original aspect ratio
+   and overflow hidden */
+.img-container > img {
+  max-width: 250px;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  z-index: 1;
+}
+
+.img-container > p {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.39);
+  color: white;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+</style>
+</head>
+<h1>Example 2</h1>
+<h2>position: absolute; top, bottom, left, right: -9999px</h2>
+<div class="img-container overflow-hidden">
+  <p style="z-index: 2">image full width of container but height cut off</p>
+  <img style="z-index: 1" src="https://cdn.shopify.com/s/files/1/1603/2567/products/fabricremnants1020_large.jpg?v=1479410110" />
+</div>
+<div class="img-container overflow-hidden">
+  <p>image full width of container but height cut off</p>
+  <img src="https://cdn.shopify.com/s/files/1/1603/2567/products/image_large.jpg?v=1479410076" />
+</div>
+<div class="img-container">
+  <p>cut off height shown here</p>
+  <img src="https://cdn.shopify.com/s/files/1/1603/2567/products/image_large.jpg?v=1479410076" />
+</div>
+
+</html>
