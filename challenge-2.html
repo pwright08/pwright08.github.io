@@ -1,0 +1,49 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="challenge-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<html>
+    <div class="header-div">
+        <div class="nav-div">
+            <img src="images/logo.png" alt="smart seo logo" class="logo">
+            <a href="javascript:void(0);" class="mobile-nav-icon" onclick="navDisplay()"><i id="menu-button" class="fa fa-bars"></i></a>
+            <ul id="nav-list">
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">UX</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">LET'S WORK TOGETHER</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="title-div">
+            <h1>THE BEST SEO AGENCY EVER</h1>
+            <h2>Your business is always safe in our hands.</h2>
+        </div>
+    </div>
+
+    <script>
+        function navDisplay () {
+            if (document.getElementById("nav-list").style.display === '') {
+                document.getElementById("nav-list").style.display = 'block'
+                document.getElementById("nav-list").style['padding-top'] = '50px'
+                document.getElementById("menu-button").classList.remove('fa-bars');
+                document.getElementById("menu-button").classList.add('fa-times');
+                document.getElementsByTagName('hr')[0].style.display = 'none'
+                document.getElementsByClassName('mobile-nav-icon')[0].style.color = '#243271'
+                document.getElementsByClassName('mobile-nav-icon')[0].style.padding = '50px 50px 0 0'
+                document.getElementsByClassName('header-div')[0].style.padding = '0px'
+            } else {
+                document.getElementById("nav-list").style.display = ''
+                document.getElementById("nav-list").style['padding-top'] = '0px'
+                document.getElementById("menu-button").classList.remove('fa-times');
+                document.getElementById("menu-button").classList.add('fa-bars');
+                document.getElementsByTagName('hr')[0].style.display = 'block'
+                document.getElementsByClassName('mobile-nav-icon')[0].style.color = 'white'
+                document.getElementsByClassName('header-div')[0].style.padding = '50px'
+                document.getElementsByClassName('mobile-nav-icon')[0].style.padding = '0 0 0 0'
+            }
+        }
+    </script>
+</html>

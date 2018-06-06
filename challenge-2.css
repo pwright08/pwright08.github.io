@@ -1,0 +1,113 @@
+.logo {
+    width: 100px;
+    float: left;
+}
+
+.header-div {
+    background-image: url("images/bkground_img_2.png");
+    color: white;
+    font-family: avenir;
+    padding: 50px;
+}
+
+.nav-div ul {
+    list-style-type: none;
+    margin-top: 0px;
+    float: right;
+}
+
+.nav-div ul li {
+    display: inline;
+}
+
+.nav-div ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav-div ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.title-div {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+h1 {
+    margin-bottom: -0.5em;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+hr {
+    margin-top: 40px;
+    margin-right: -50px;
+    margin-left: -50px;
+    border: none;
+    height: 1px;
+    color: white;
+    background-color: white;
+}
+
+.mobile-nav-icon {
+    display: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .title-div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        float: none;
+    }
+
+    .nav-div ul {
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        z-index: 1;
+
+        float: none;
+        display: none;
+    }
+
+    .nav-div ul li {
+        display: block;
+        line-height: 2.5em;
+        text-align: center;
+    }
+
+    .nav-div ul li:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .nav-div ul li a {
+        color: #243271;
+    }
+
+    .nav-div ul li:first-child {
+        margin-top: 20px;
+    }
+
+    .mobile-nav-icon {
+        float: right;
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+
+    #menu-button {
+        font-size: 1.5em;
+    }
+}
