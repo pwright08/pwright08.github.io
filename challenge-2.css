@@ -5,6 +5,7 @@
 
 .header-div {
     background-image: url("images/bkground_img_2.png");
+    background-size: cover;
     color: white;
     font-family: avenir;
     padding: 50px;
