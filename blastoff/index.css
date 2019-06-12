@@ -1,0 +1,87 @@
+#enterCode {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#enterCode h1 {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+#enterCode > *:not(h1) {
+  margin-block-start: 2.01em;
+  margin-block-end: 2.01em;
+}
+
+#enterCode > * {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+#enterCode input[type=text] {
+  font-size: 50px;
+  width: 50px;
+  height: 75px;
+  text-align: center;
+  border-style: solid;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 24px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Space Mono'), local('SpaceMono-Regular'), local('i7dPIFZifjKcF5UAWdDRYE98RXi4EwSsbg.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Space Mono'), local('SpaceMono-Regular'), local('i7dPIFZifjKcF5UAWdDRYEF8RXi4EwQ.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
